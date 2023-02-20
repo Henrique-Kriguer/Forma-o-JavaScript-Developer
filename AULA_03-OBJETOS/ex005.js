@@ -16,9 +16,23 @@ class Pessoa {
     }
 
     imc (){
-        return this.peso / Math.pow(this.altura,2);
+        return (this.peso / Math.pow(this.altura,2)).toFixed(2);
+    }
+    classificarPessoa(){
+        if (this.imc() < 18.5){
+            return 'ABAIXO DO PESO'
+        } else if(this.imc()  < 25){
+           return  'PESO IDEAL'
+        } else if (this.imc()  < 30){
+            return 'ACIMA DO PESO'
+        } else if (this.imc() < 40){
+            return 'OBESO'
+        } else {
+            return'OBSIDADE GRAVE'
+        }
     }
 }
 
 const Henrique = new Pessoa ('Henrique Kriguer', 83, 1.78);
 console.log(Henrique.imc());
+console.log(Henrique.classificarPessoa());
