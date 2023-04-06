@@ -17,12 +17,12 @@ function classificarImc(imc){
 }
 
 // Main
-(function classificarImc(){
-    const peso = 82.5;
-    const altura = 1.80;
+(function (){
+    const peso = 83.5;
+    const altura = 1.78;
     const imc = calcularImc(peso,altura)
-    const situacao = classificarImc(imc);
-    console.log(imc);
+    //const situacao = classificarImc(imc);
+    console.log(imc.toFixed(2));
     console.log(classificarImc(imc));
     
 })();
@@ -31,4 +31,5 @@ function classificarImc(imc){
 //main();
 
 // ´temos uma função autoexecutável quando a colocamos dentro de um parenteses 
-//e colocamos após ela (); Podemos até remover o nome main. Por isso nossa function main () não precisa ser invocada
+//e colocamos após ela (); Podemos até remover o nome main.
+// Por isso nossa function main () não precisa ser invocada

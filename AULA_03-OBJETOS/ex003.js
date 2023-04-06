@@ -22,7 +22,7 @@ function compararPessoas(p1, p2){
     }
 }
 
-const Henrique = new Pessoa ('Henrique', 51);
+const Henrique = new Pessoa ('Henrique', 52);
 console.log (Henrique);
 const Simone = new Pessoa ('Simone', 51);
 console.log(Simone);

@@ -33,6 +33,7 @@ class Pessoa {
     }
 }
 
-const Henrique = new Pessoa ('Henrique Kriguer', 83, 1.78);
-console.log(Henrique.imc());
+const Henrique = new Pessoa ('Henrique Kriguer', 82.6, 1.79);
+console.log(Henrique);
 console.log(Henrique.classificarPessoa());
+console.log('IMC : '+ Henrique.imc());

@@ -21,6 +21,6 @@ function calculaPagto(precoEtiqueta,condicaoPgto){
     }
 }
 const precoEtiqueta = 100.0;
-const condicaoPgto = 3;
+const condicaoPgto = 2;
 calculaPagto(precoEtiqueta,condicaoPgto);
 console.log(valorPagto);

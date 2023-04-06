@@ -18,4 +18,4 @@ class Car {
     }
 }
 const Duster = new Car ('Duster','cinza',8);
-console.log(Duster.precoViagem(400,5.2));
+console.log('A viagem custará R$ ' + (Duster.precoViagem(400,5.2)).toFixed(2));
