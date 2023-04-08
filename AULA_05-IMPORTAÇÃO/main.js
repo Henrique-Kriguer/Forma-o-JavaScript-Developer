@@ -18,9 +18,11 @@ Saída:
 
 2º forma de importação (mais moderna) */
 
-const{ gets, print} = require('./funcoes-auxiliares');
+const funcoes = require('./funcoes-auxiliares');
 
-let maiorNumero = 0;
+console.log(funcoes.gets());
+
+/*let maiorNumero = 0;
 
 const qtdAlunos = gets();
 
@@ -31,4 +33,4 @@ for (let index = 0; index < qtdAlunos; index++) {
     }
 }
 
-print(maiorNumero);
+print(maiorNumero);*/
