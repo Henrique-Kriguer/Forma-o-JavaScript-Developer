@@ -18,20 +18,23 @@
 
 const { gets, print } = require('./funcoes-aux-ex-02');
 
-const numero = gets();
-const maiorPar=null;
-const menorImpar=null;
+const n = gets();
+let maiorPar = null;
+let menorImpar = null;
 
-for(i=0; i< n.length();i++){
+
+for (let i = 0; i < n; i++) {
     const numero = gets();
-    if (numero % 2 === 0){
-        if (numero > maiorPar){
+    if (numero % 2 === 0) {
+        if (maiorPar === null) {
             maiorPar = numero;
-        }else{
-
+        } else if (numero > maiorPar) {
+            maiorPar = numero;
         }
-    } else{
-        if (numero < menorImpar ){
+    } else {
+        if (menorImpar === null) {
+            menorImpar = numero;
+        } else if (numero < menorImpar) {
             menorImpar = numero;
         }
     }
@@ -39,4 +42,3 @@ for(i=0; i< n.length();i++){
 print("maior número par: " + maiorPar);
 
 print("menor número impar: " + menorImpar);
-
